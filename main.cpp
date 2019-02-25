@@ -11,7 +11,7 @@ Pizza input_get(const string& name) {
 }
 
 int main(int argc, const char* argv[]) {
-    if (argc != 2) {
+    if (argc != 1) {
         cout << "g++ main <input_file_name> <output_file_name>\n";
     }
     else{
