@@ -26,9 +26,16 @@ int main(int argc, const char* argv[]) {
                 for(int j=0; j<cols; j++){
                     char ingredient;
                     in>>ingredient;
-                    if(ingredient=='M') pizza.cells[i][j].isMushroom=true;
-                    else pizza.cells[i][j].isMushroom=false;
+                    if(ingredient=='M'){
+                        pizza.cells[i][j].isMushroom=true;
+                        cout<<"M";
+                    } 
+                    else{
+                        pizza.cells[i][j].isMushroom=false;
+                        cout<<"T";
+                    } 
                 }
+                cout<<endl;
             }
         }        
     }
