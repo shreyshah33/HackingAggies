@@ -40,11 +40,12 @@ Pos Pizza::getNextCell() {
 }
 
 Pos Pizza::getHighestCell(int col) {
-    Pos out(0,col);
+    Pos out(-1,col);
     for(int row = 0; row < cells.size(); row++) {
         if(cells.at(row).at(col).isPartOfSlice) continue;
         out.x = row;
+        break;
 
     }
-    return Pos(0, 0);
+    return out;
 }
