@@ -15,12 +15,12 @@ int main(int argc, const char* argv[]) {
         cout << "g++ main <input_file_name> <output_file_name>\n";
     }
     else{
-        string input ="../a_example.in";
+        string input ="../b_small.in";
         ifstream in (input);
         if(in.is_open()){
             int rows, cols, min, max;
             in >> rows >> cols >> min >> max;
-            cout<<rows<<" "<<cols<<" "<<min<<" "<<max;
+            cout<<rows<<" "<<cols<<" "<<min<<" "<<max << endl;
             Pizza pizza(rows,cols);
             for(int i=0; i<rows; i++){
                 for(int j=0; j<cols; j++){

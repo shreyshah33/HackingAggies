@@ -34,7 +34,7 @@ int Pizza::sum() {
 
 Pizza::Pizza(int x, int y): x(x), y(y) {
     cells.resize(x);
-    for(vector<Cell> v: cells) {
+    for(vector<Cell> &v: cells) {
         v.resize(y);
     }
 }
