@@ -19,8 +19,10 @@ public:
     Pizza(int x, int y);
 
     void createSlice(Slice slice);
-    void replaceSlice(int index);
+    void replaceSlice(int index, Slice slice);
     int sum();
+    Pos getNextCell();
+    Pos getHighestCell(int col);
 
 };
 
