@@ -32,7 +32,12 @@ int Pizza::sum() {
     return sum;
 }
 
-Pizza::Pizza(int x, int y): x(x), y(y) {}
+Pizza::Pizza(int x, int y): x(x), y(y) {
+    cells.resize(x);
+    for(vector<Cell> v: cells) {
+        v.resize(y);
+    }
+}
 
 Pos Pizza::getNextCell() {
 

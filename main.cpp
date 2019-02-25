@@ -15,7 +15,7 @@ int main(int argc, const char* argv[]) {
         cout << "g++ main <input_file_name> <output_file_name>\n";
     }
     else{
-        string input ="a_example.in";
+        string input ="../a_example.in";
         ifstream in (input);
         if(in.is_open()){
             int rows, cols, min, max;
@@ -27,11 +27,11 @@ int main(int argc, const char* argv[]) {
                     char ingredient;
                     in>>ingredient;
                     if(ingredient=='M'){
-                        pizza.cells[i][j].isMushroom=true;
+                        pizza.cells.at(i).at(j).isMushroom=true;
                         cout<<"M";
                     } 
                     else{
-                        pizza.cells[i][j].isMushroom=false;
+                        pizza.cells.at(i).at(j).isMushroom=false;
                         cout<<"T";
                     } 
                 }

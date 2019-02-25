@@ -11,6 +11,7 @@ public:
     Slice* slice;
 
     Cell(bool isMushroom);
+    Cell();
 
 };
 
